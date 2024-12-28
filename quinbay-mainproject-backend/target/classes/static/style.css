@@ -1,0 +1,164 @@
+/* General styling */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(to bottom, #4a90e2, #84a6b8); /* More intense blue gradient */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+
+.container {
+  background: linear-gradient(to bottom, #bbdefb, #e3f2fd); 
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#todo-input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#add-btn {
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#add-btn:hover {
+  background-color: #45A049; 
+}
+
+
+#todo-list {
+  margin-bottom: 20px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #fdfdfd, #e4f2f4); 
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: #333;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-item span {
+  flex-grow: 1;
+  padding-right: 10px; 
+}
+
+.task-item .completed {
+  text-decoration: line-through;
+  color: #a9a9a9;
+}
+
+.complete-btn, .delete-btn, .edit-btn {
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px; 
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.complete-btn {
+  background-color: #5cb85c; 
+  color: white;
+}
+
+.delete-btn {
+  background-color: #e74c3c; /
+ 
+}
+
+.edit-btn {
+  background-color: #f39c12; 
+}
+
+.complete-btn:hover {
+  background-color: #4cae4c;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.edit-btn:hover {
+  background-color: #e67e22;
+}
+
+
+.footer {
+  margin-top: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+}
+
+
+.progress-container {
+  background: #576969; 
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  height: 18px;
+  width: 150px; 
+  box-shadow: inset 0 1px 3px rgba(199, 159, 159, 0.1);
+  margin-top: 5px; 
+  
+}
+.counter-container {
+  font-size: medium;
+  padding-right: 10px;
+  
+}
+
+#progress-bar {
+  height: 100%;
+  background: linear-gradient(to right, #4CAF50, #81c784); 
+  border-radius: 10px;
+  width: 0%;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  transition: width 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
